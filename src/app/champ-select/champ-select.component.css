@@ -1,0 +1,37 @@
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid #FFC75F;
+    background-color: #0D192B;
+    padding: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.champ-pool-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.champ-icon {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    transition: transform 0.3s ease; 
+}
+
+.champ-icon img {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.champ-icon:hover {
+    transform: scale(1.1);
+}
