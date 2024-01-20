@@ -26,7 +26,7 @@
     transition: transform 0.3s ease; 
 }
 
-.champ-icon img {
+.champ-icon a img{
     display: block;
     width: auto;
     height: auto;
