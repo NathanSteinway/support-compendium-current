@@ -4,10 +4,11 @@ import { RouterOutlet } from '@angular/router';
 
 import { ChampSelectComponent } from './champ-select/champ-select.component'
 import { ChampPageRakanComponent } from './champ-page-rakan/champ-page-rakan.component'
+import { ChampPageJannaComponent} from './champ-page-janna/champ-page-janna.component'
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ChampSelectComponent, ChampPageRakanComponent],
+  imports: [CommonModule, RouterOutlet, ChampSelectComponent, ChampPageRakanComponent, ChampPageJannaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
