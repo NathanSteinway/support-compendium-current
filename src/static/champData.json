@@ -1,0 +1,89 @@
+{
+    "champions": [
+        
+        {
+            "name": "Rakan",
+            "spells": {
+                "passive": {
+                    "1": {
+                        "passiveName": "Fey Feathers",
+                        "info": "Periodically, Rakan grants himself a shield that lasts until broken. After being out of combat for 5 seconds, any leftover shield will be restored to maximum value. Rakan's basic attacks and ability hits reduce Fey Feathers' Cooldown by 1 second for each enemy champion hit."
+                    },
+
+                    "2": {
+                        "passiveName": "Lover's Leap",
+                        "info": "If either Rakan or Xayah is channeling Recall, the other may move nearby and channel their own to join alongside them. Both reach base at the time of which the initiator's Recall completes."
+                    }
+                },
+                "q": {
+                    "spellName": "Gleaming Quill",
+                    "info": {
+                        "passive": "",
+                        "active": "Rakan throws an enchanted feather in the target direction that deals magic damage to the first enemy hit. If the target was an enemy champion or epic monster, a radius is marked around Rakan. After 3 seconds or if an allied champion enters the radius, Rakan heals himself and nearby allied champions."
+                    }
+                },
+                "w": {
+                    "spellName": "Grand Entrance",
+                    "info": {
+                        "passive": "",
+                        "active": "Rakan dashes to the target location. After a brief delay upon arrival, he deals magic damage to nearby enemies and knocks them up for 1 second. Rakan will be knocked down by any immobilizing or polymorphing crowd control, excluding sleep, during Grand Entrance."
+                    }
+                },
+                "e": {
+                    "spellName": "Battle Dance",
+                    "info": {
+                        "passive": "",
+                        "active": "Rakan grants a shield to the target allied champion for 3 seconds and then dashes to and around them. Battle Dance can be recast within 5 seconds at no additional cost. Rakan will be knocked down by any immobilizing or polymorphing crowd control, excluding sleep, during Battle Dance. If Xayah is the target, Battle Dance can be cast from an increased range."
+                    }
+                },
+                "r": {
+                    "spellName": "The Quickness",
+                    "info": {
+                        "passive": "",
+                        "active": "Rakan breaks into a captivating sprint, gaining ghosting and bonus movement speed for the duration. During this time, he deals magic damage to enemies he collides with and charms and slows them for a duration. This cannot affect the same enemy more than once. Colliding with an enemy champion extends The Quickness' duration, which can occur once per champion. When Rakan collides with his first enemy champion, he gains additional movement speed that decays over time. Rakan cannot basic attack enemy champions he did not collide with unless the attack command was input before the ability was cast."
+                    }
+                }
+            }
+        },
+
+        {
+            "name": "Janna",
+            "spells": {
+                "passive": {
+                    "1": {
+                        "passiveName": "Tailwind",
+                        "info": "Janna grants bonus movement speed to nearby allied champions that are facing in the direction of her location. Additionally, her basic attacks on-hit and Zephyr deal bonus magic damage equal to a percentage of her bonus movement speed."
+                    }
+                },
+                "q": {
+                    "spellName": "Howling Gale",
+                    "info": {
+                        "passive": "",
+                        "active": "Janna summons a whirlwind at her current location that charges up over time, increasing it' range, speed, damage, and knockup duration every second. Howling Gale can be recast at any time within the duration, and does so automatically after the duration expires."
+                    } 
+                },
+                "w": {
+                    "spellName": "Zephyr",
+                    "info": {
+                        "passive": "Janna is ghosted and gains bonus movement speed.",
+                        "active": "Janna sends an air elemental at the target enemy that deals magic damage and slows them, capped at 99%."
+                    }
+                },
+                "e": {
+                    "spellName": "Eye of the Storm",
+                    "info": {
+                        "passive": "Whenever Janna's abilities slow or knock up at least one enemy champion, 20% of Eye of the Storm's cooldown is refunded. This may occur once per spell cast.",
+                        "active": "Janna grants the target allied champion, turret, or herself a shield. While the shield holds, the target gains bonus attack damage."
+                    }
+                },
+                "r": {
+                    "spellName": "Monsoon",
+                    "info": {
+                        "passive": "",
+                        "active": "Janna unleashes a blast that knocks back all nearby enemies, with the distance and duration being determined by proximity to Janna. Enemies cannot be knocked through terrain by Monsoon. Janna also channels for up to 3 seconds, healing nearby allies."
+                    }
+                }
+            }
+        }
+    ]
+}
