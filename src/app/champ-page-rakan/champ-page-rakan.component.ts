@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './champ-page-rakan.component.css'
 })
 export class ChampPageRakanComponent {
-
+  spellInfo(): void {
+    console.log("Hello world!")
+  }
 }

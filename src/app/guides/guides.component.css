@@ -1,6 +1,5 @@
 .flexbox-container {
     display: inline-flex;
-    width: auto;
     flex-direction: column;
     color: white;
     justify-content: center;
@@ -12,14 +11,14 @@
     flex-wrap: wrap;
 }
 
-.champ-pool-container {
+.guides-container {
     display:flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-.champ-icon {
+.guide-icon {
     border: none;
     padding: 0;
     cursor: pointer;
@@ -28,12 +27,12 @@
     transition: transform 0.3s ease; 
 }
 
-.champ-icon a img {
+.guide-icon a img {
     display: block;
-    width: auto;
-    height: auto;
+    width: 120px;
+    height: 120px;
 }
 
-.champ-icon:hover {
+.guide-icon:hover {
     transform: scale(1.1);
 }

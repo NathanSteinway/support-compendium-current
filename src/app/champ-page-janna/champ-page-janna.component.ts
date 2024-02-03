@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './champ-page-janna.component.css'
 })
 export class ChampPageJannaComponent {
-
+  spellInfo(): void {
+    console.log('BOOM!')
+  }
 }
