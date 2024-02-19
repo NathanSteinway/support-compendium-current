@@ -20,4 +20,5 @@ import { ChampPageJannaComponent} from './champ-page-janna/champ-page-janna.comp
 })
 export class AppComponent {
   title = 'support-compendium-curr';
+
 }
