@@ -17,15 +17,27 @@ export class ChampPageJannaComponent {
 
   constructor(private champInfoService: ChampInfoService) {}
 
+
   clear() {
     this.info = undefined;
     this.error = undefined;
     this.headers = [];
   }
 
+  
+
   showChampInfo() {
+
     this.champInfoService.getInfo()
-      .subscribe(data => this.info = { ...data });
-      console.log(this.info)
+      .subscribe(data => {
+        
+        this.info = { ...data };
+
+        let champion = this.info.champions[0]
+
+        console.log(champion.spells.q.info.active);
+      });
+        
+      
   }
 }
