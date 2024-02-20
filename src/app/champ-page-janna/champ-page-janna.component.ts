@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Info, ChampInfoService } from '../champ-info.service';
 
@@ -11,9 +11,13 @@ import { Info, ChampInfoService } from '../champ-info.service';
   styleUrl: './champ-page-janna.component.css'
 })
 export class ChampPageJannaComponent {
+
   error: any;
   headers: string[] = [];
   info: Info | undefined;
+
+  champName: any;
+  spellType: any;
 
   constructor(private champInfoService: ChampInfoService) {}
 
@@ -24,20 +28,21 @@ export class ChampPageJannaComponent {
     this.headers = [];
   }
 
-  
-
-  showChampInfo() {
+  showChampInfo(champId: number, spellId: string) {
 
     this.champInfoService.getInfo()
       .subscribe(data => {
         
         this.info = { ...data };
 
-        let champion = this.info.champions[0]
+        let champion = this.info.champions[champId]
+        let spell = champion.spells[spellId]
 
-        console.log(champion.spells.q.info.active);
+        this.champName = champion
+        this.spellType = spell
+        
       });
         
-      
+    
   }
 }
