@@ -2,28 +2,14 @@
     <div class="main-container">
             <div class="intro">
                 <h1>Janna</h1>
-                <p>An ancient and mysterious wind spirit, Janna has come to protect the dispossessed of Zaun Crest icon Zaun. While her presence is most often felt as a soothing breeze or a ferocious tempest, she also can manifest in corporeal form as an ethereal figure, comforting the downtrodden. Over the eons, Janna has witnessed the rise and fall of civilizations. Through it all, she remains steadfast as a beacon of hope to those in need.</p>
+                <p>An ancient and mysterious wind spirit, Janna has come to protect the dispossessed of Zaun. While her presence is most often felt as a soothing breeze or a ferocious tempest, she also can manifest in corporeal form as an ethereal figure, comforting the downtrodden. Over the eons, Janna has witnessed the rise and fall of civilizations. Through it all, she remains steadfast as a beacon of hope to those in need.</p>
                 <div class="spells">
+                    <div *ngFor="let info of spellDetails">
 
-                    <button id="spellBtn" style="background: transparent; border: none;" (click)="showChampInfo(1, 'passive')">
-                        <img class="spell-icon" src="../../assets/Janna_Tailwind.png">
-                    </button>
-
-                    <button id="spellBtn" style="background: transparent; border: none;" (click)="showChampInfo(1, 'q')">
-                        <img class="spell-icon" src="../../assets/Janna_Howling_Gale.png">
-                    </button>
-
-                    <button id="spellBtn" style="background: transparent; border: none;" (click)="showChampInfo(1, 'w')">
-                        <img class="spell-icon" src="../../assets/Janna_Zephyr.png">
-                    </button>
-
-                    <button id="spellBtn" style="background: transparent; border: none;" (click)="showChampInfo(1, 'e')">
-                        <img class="spell-icon" src="../../assets/Janna_Eye_of_the_Storm.png">
-                    </button>
-                    
-                    <button id="spellBtn" style="background: transparent; border: none;" (click)="showChampInfo(1, 'r')">
-                        <img class="spell-icon" src="../../assets/Janna_Monsoon.png">
-                    </button>
+                        <button id={{info.spellName}} class="spellBtn" (click)="showChampInfo(champId, info.spellId, info.spellIcon)">
+                            <img class="spell-icon" src={{info.spellIcon}}>
+                        </button>
+                    </div>
                 </div>
 
                 <div id="description-container" *ngIf="champName && spellType">

@@ -5,16 +5,10 @@
             "name": "Rakan",
             "spells": {
                 "passive": {
-                    "1": {
-                        "passiveName": "Fey Feathers",
-                        "info": "Periodically, Rakan grants himself a shield that lasts until broken. After being out of combat for 5 seconds, any leftover shield will be restored to maximum value. Rakan's basic attacks and ability hits reduce Fey Feathers' Cooldown by 1 second for each enemy champion hit."
+                        "spellName": "Fey Feathers & Lover's Leap",
+                        "info": "Periodically, Rakan grants himself a shield that lasts until broken. After being out of combat for 5 seconds, any leftover shield will be restored to maximum value. Rakan's basic attacks and ability hits reduce Fey Feathers' Cooldown by 1 second for each enemy champion hit. If either Rakan or Xayah is channeling Recall, the other may move nearby and channel their own to join alongside them. Both reach base at the time of which the initiator's Recall completes."
                     },
-
-                    "2": {
-                        "passiveName": "Lover's Leap",
-                        "info": "If either Rakan or Xayah is channeling Recall, the other may move nearby and channel their own to join alongside them. Both reach base at the time of which the initiator's Recall completes."
-                    }
-                },
+                    
                 "q": {
                     "spellName": "Gleaming Quill",
                     "info": {
