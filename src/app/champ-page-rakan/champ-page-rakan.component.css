@@ -18,7 +18,6 @@
 
 .spells {
     display:flex;
-
 }
 
 .spell-icon {
@@ -34,6 +33,10 @@
     transform: scale(1.1);
 }
 
+.spellBtn {
+    background: transparent; 
+    border: none;
+}
 .render {
     max-width: 100%;
     height: 80vh;

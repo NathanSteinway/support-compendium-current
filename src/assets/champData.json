@@ -4,38 +4,35 @@
         {
             "name": "Rakan",
             "spells": {
-                "passive": {
-                        "spellName": "Fey Feathers & Lover's Leap",
-                        "info": "Periodically, Rakan grants himself a shield that lasts until broken. After being out of combat for 5 seconds, any leftover shield will be restored to maximum value. Rakan's basic attacks and ability hits reduce Fey Feathers' Cooldown by 1 second for each enemy champion hit. If either Rakan or Xayah is channeling Recall, the other may move nearby and channel their own to join alongside them. Both reach base at the time of which the initiator's Recall completes."
-                    },
+                "passive_1": {
+                    "spellName": "Fey Feathers",
+                    "passive": "Periodically, Rakan grants himself a shield that lasts until broken. After being out of combat for 5 seconds, any leftover shield will be restored to maximum value. Rakan's basic attacks and ability hits reduce Fey Feathers' Cooldown by 1 second for each enemy champion hit. If either Rakan or Xayah is channeling Recall, the other may move nearby and channel their own to join alongside them. Both reach base at the time of which the initiator's Recall completes."
+                },
+                
+                "passive_2": {
+                    "spellName": "Lover's Leap",
+                    "passive": "If either Rakan or Xayah is channeling Recall, the other may move nearby and channel their own to sync their Recall time to their partner's Recall time."
+                },
 
                 "q": {
                     "spellName": "Gleaming Quill",
-                    "info": {
-                        "passive": "",
-                        "active": "Rakan throws an enchanted feather in the target direction that deals magic damage to the first enemy hit. If the target was an enemy champion or epic monster, a radius is marked around Rakan. After 3 seconds or if an allied champion enters the radius, Rakan heals himself and nearby allied champions."
-                    }
+                    "passive": "",
+                    "active": "Rakan throws an enchanted feather in the target direction that deals magic damage to the first enemy hit. If the target was an enemy champion or epic monster, a radius is marked around Rakan. After 3 seconds or if an allied champion enters the radius, Rakan heals himself and nearby allied champions."
                 },
                 "w": {
                     "spellName": "Grand Entrance",
-                    "info": {
-                        "passive": "",
-                        "active": "Rakan dashes to the target location. After a brief delay upon arrival, he deals magic damage to nearby enemies and knocks them up for 1 second. Rakan will be knocked down by any immobilizing or polymorphing crowd control, excluding sleep, during Grand Entrance."
-                    }
+                    "passive": "",
+                    "active": "Rakan dashes to the target location. After a brief delay upon arrival, he deals magic damage to nearby enemies and knocks them up for 1 second. Rakan will be knocked down by any immobilizing or polymorphing crowd control, excluding sleep, during Grand Entrance."
                 },
                 "e": {
                     "spellName": "Battle Dance",
-                    "info": {
-                        "passive": "",
-                        "active": "Rakan grants a shield to the target allied champion for 3 seconds and then dashes to and around them. Battle Dance can be recast within 5 seconds at no additional cost. Rakan will be knocked down by any immobilizing or polymorphing crowd control, excluding sleep, during Battle Dance. If Xayah is the target, Battle Dance can be cast from an increased range."
-                    }
+                    "passive": "",
+                    "active": "Rakan grants a shield to the target allied champion for 3 seconds and then dashes to and around them. Battle Dance can be recast within 5 seconds at no additional cost. Rakan will be knocked down by any immobilizing or polymorphing crowd control, excluding sleep, during Battle Dance. If Xayah is the target, Battle Dance can be cast from an increased range."
                 },
                 "r": {
                     "spellName": "The Quickness",
-                    "info": {
-                        "passive": "",
-                        "active": "Rakan breaks into a captivating sprint, gaining ghosting and bonus movement speed for the duration. During this time, he deals magic damage to enemies he collides with and charms and slows them for a duration. This cannot affect the same enemy more than once. Colliding with an enemy champion extends The Quickness' duration, which can occur once per champion. When Rakan collides with his first enemy champion, he gains additional movement speed that decays over time. Rakan cannot basic attack enemy champions he did not collide with unless the attack command was input before the ability was cast."
-                    }
+                    "passive": "",
+                    "active": "Rakan breaks into a captivating sprint, gaining ghosting and bonus movement speed for the duration. During this time, he deals magic damage to enemies he collides with and charms and slows them for a duration. This cannot affect the same enemy more than once. Colliding with an enemy champion extends The Quickness' duration, which can occur once per champion. When Rakan collides with his first enemy champion, he gains additional movement speed that decays over time. Rakan cannot basic attack enemy champions he did not collide with unless the attack command was input before the ability was cast."
                 }
             }
         },
