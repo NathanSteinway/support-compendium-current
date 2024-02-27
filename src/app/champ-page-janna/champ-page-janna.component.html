@@ -6,13 +6,13 @@
                 <div class="spells">
                     <div *ngFor="let info of spellDetails">
 
-                        <button id={{info.spellName}} class="spellBtn" (click)="showChampInfo(champId, info.spellId, info.spellIcon)">
+                        <button id={{info.spellName}} class="spellBtn" (click)="showChampInfo(champId, info.spellId)">
                             <img class="spell-icon" src={{info.spellIcon}}>
                         </button>
                     </div>
                 </div>
 
-                <div id="description-container" *ngIf="champName && spellType">
+                <div id="description-container" *ngIf="spellType">
                     <div>
                         <p>{{spellType.spellName}}</p>
                         <div>

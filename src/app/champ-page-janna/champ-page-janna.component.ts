@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Info, ChampInfoService } from '../champ-info.service';
 
@@ -6,20 +6,35 @@ import { Info, ChampInfoService } from '../champ-info.service';
   selector: 'app-champ-page-janna',
   standalone: true,
   imports: [CommonModule],
-  providers: [ ChampInfoService ],
+  providers: [],
   templateUrl: './champ-page-janna.component.html',
   styleUrl: './champ-page-janna.component.css'
 })
-export class ChampPageJannaComponent {
 
-  error: any;
-  headers: string[] = [];
+export class ChampPageJannaComponent implements OnInit {
+
+  constructor(private champInfoService: ChampInfoService) {}
+
+  ngOnInit(): void {
+    this.getChampInfo();
+  }
+
+  getChampInfo(): void {
+    this.champInfoService.getInfo()
+    .subscribe(data => {
+      
+      this.info = { ...data };
+      
+    });
+  }
+
   info: Info | undefined;
 
   champName: any;
   spellType: any;
-
   champId: number = 1
+  spellId: string = ''
+
   spellDetails: {spellId: string, spellIcon: string, spellName: string}[] = [
     {spellId: 'passive', spellIcon: '../../assets/Janna_Tailwind.png', spellName: 'Tailwind'},
     {spellId: 'q', spellIcon: '../../assets/Janna_Howling_Gale.png', spellName: 'Howling Gale'},
@@ -28,30 +43,9 @@ export class ChampPageJannaComponent {
     {spellId: 'r', spellIcon: '../../assets/Janna_Monsoon.png', spellName: 'Monsoon'}
   ]
 
-  constructor(private champInfoService: ChampInfoService) {}
-
-
-  clear() {
-    this.info = undefined;
-    this.error = undefined;
-    this.headers = [];
-  }
-
-  showChampInfo(champId: number, spellId: string, spellIcon: string) {
-
-    this.champInfoService.getInfo()
-      .subscribe(data => {
-        
-        this.info = { ...data };
-
-        let champion = this.info.champions[champId]
-        let spell = champion.spells[spellId]
-
-        this.champName = champion
-        this.spellType = spell
-        
-      });
-        
-    
+  showChampInfo(champId: number, spellId: string) {
+    let champion = this.info?.champions[champId]
+    this.champName = champion
+    this.spellType = champion?.spells[spellId]
   }
 }

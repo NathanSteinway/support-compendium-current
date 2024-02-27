@@ -8,7 +8,7 @@
                         "spellName": "Fey Feathers & Lover's Leap",
                         "info": "Periodically, Rakan grants himself a shield that lasts until broken. After being out of combat for 5 seconds, any leftover shield will be restored to maximum value. Rakan's basic attacks and ability hits reduce Fey Feathers' Cooldown by 1 second for each enemy champion hit. If either Rakan or Xayah is channeling Recall, the other may move nearby and channel their own to join alongside them. Both reach base at the time of which the initiator's Recall completes."
                     },
-                    
+
                 "q": {
                     "spellName": "Gleaming Quill",
                     "info": {
@@ -42,6 +42,42 @@
 
         {
             "name": "Janna",
+            "spells": {
+                "passive": {
+                    "spellName": "Tailwind",
+                    "passive": "Janna grants bonus movement speed to nearby allied champions that are facing in the direction of her location. Additionally, her basic attacks on-hit and Zephyr deal bonus magic damage equal to a percentage of her bonus movement speed."
+                },
+                "q": {
+                    "spellName": "Howling Gale",                    
+                    "passive": "",
+                    "active": "Janna summons a whirlwind at her current location that charges up over time, increasing it's range, speed, damage, and knockup duration every second. Howling Gale can be recast at any time within the duration, and does so automatically after the duration expires."
+                },
+                "w": {
+                    "spellName": "Zephyr",
+                    
+                    "passive": "Janna is ghosted and gains bonus movement speed.",
+                    "active": "Janna sends an air elemental at the target enemy that deals magic damage and slows them, capped at 99%."
+                    
+                },
+                "e": {
+                    "spellName": "Eye of the Storm",
+                    
+                    "passive": "Whenever Janna's abilities slow or knock up at least one enemy champion, a portion of Eye of the Storm's cooldown is refunded. This may occur once per spell cast.",
+                    "active": "Janna grants the target allied champion, turret, or herself a shield. While the shield holds, the target gains bonus attack damage."
+                    
+                },
+                "r": {
+                    "spellName": "Monsoon",
+                    
+                    "passive": "",
+                    "active": "Janna unleashes a blast that knocks back all nearby enemies, with the distance and duration being determined by proximity to Janna. Enemies cannot be knocked through terrain by Monsoon. Janna also channels for up to 3 seconds, healing nearby allies."
+            
+                }
+            }
+        },
+
+        {
+            "name": "Maokai",
             "spells": {
                 "passive": {
                     "spellName": "Tailwind",
