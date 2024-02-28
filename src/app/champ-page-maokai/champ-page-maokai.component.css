@@ -1,0 +1,43 @@
+.main-container {
+    display:flex;
+}
+
+.intro {
+    position: relative;
+    width: 35%;
+    padding: 40px 100px 0px 140px;
+}
+
+.intro h1 {
+    font-size: 60px;
+}
+
+.intro p {
+    font-size: large;
+}
+
+.spells {
+    display:flex;
+}
+
+.spell-icon {
+    border: none;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    transition: transform 0.3s ease; 
+}
+
+.spell-icon:hover {
+    transform: scale(1.1);
+}
+
+.spellBtn {
+    background: transparent; 
+    border: none;
+}
+.render {
+    max-width: 100%;
+    height: 80vh;
+}

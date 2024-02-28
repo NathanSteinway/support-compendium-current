@@ -9,11 +9,12 @@ import { HomepageWrapperComponent } from './homepage-wrapper/homepage-wrapper.co
   // import { GuidesComponent } from './guides/guides.component'
 import { ChampPageRakanComponent } from './champ-page-rakan/champ-page-rakan.component'
 import { ChampPageJannaComponent} from './champ-page-janna/champ-page-janna.component'
+import { ChampPageMaokaiComponent } from './champ-page-maokai/champ-page-maokai.component'
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, NavComponent, HomepageWrapperComponent, ChampPageRakanComponent, ChampPageJannaComponent],
+  imports: [CommonModule, RouterOutlet, RouterLink, NavComponent, HomepageWrapperComponent, ChampPageRakanComponent, ChampPageJannaComponent, ChampPageMaokaiComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -77,34 +77,33 @@
             "name": "Maokai",
             "spells": {
                 "passive": {
-                    "spellName": "Tailwind",
-                    "passive": "Janna grants bonus movement speed to nearby allied champions that are facing in the direction of her location. Additionally, her basic attacks on-hit and Zephyr deal bonus magic damage equal to a percentage of her bonus movement speed."
+                    "spellName": "Sap Magic",
+                    "passive": "Periodically, Maokai empowers his next basic attack to have an uncancellable windup, reset his basic attack timer, and heal him for a percentage of his maximum hp. Each time Maokai casts an ability, hits an enemy champion or epic monster with Sapling Toss, or is struck by an enemy's ability, Sap Magic's cooldown is reduced, modified to a smaller reduction if hit by a large monster's basic attack or ability. "
                 },
                 "q": {
-                    "spellName": "Howling Gale",                    
+                    "spellName": "Bramble Smash",                    
                     "passive": "",
-                    "active": "Janna summons a whirlwind at her current location that charges up over time, increasing it's range, speed, damage, and knockup duration every second. Howling Gale can be recast at any time within the duration, and does so automatically after the duration expires."
+                    "active": "Maokai sends a shockwave in the target direction that deals magic damage to enemies hit and slows them briefly. Bramble Smash deals bonus magic damage to monsters. Enemies near Maokai are also briefly stunned and knocked back. Knock back distance scales with proximity to Maokai."
                 },
                 "w": {
-                    "spellName": "Zephyr",
+                    "spellName": "Twisted Advance",
                     
-                    "passive": "Janna is ghosted and gains bonus movement speed.",
-                    "active": "Janna sends an air elemental at the target enemy that deals magic damage and slows them, capped at 99%."
+                    "passive": "",
+                    "active": "Maokai dashes to the target enemy while being untargetable. Upon arrival, he deals magic damage and roots them for a duration."
                     
                 },
                 "e": {
-                    "spellName": "Eye of the Storm",
+                    "spellName": "Sapling Toss",
                     
-                    "passive": "Whenever Janna's abilities slow or knock up at least one enemy champion, a portion of Eye of the Storm's cooldown is refunded. This may occur once per spell cast.",
-                    "active": "Janna grants the target allied champion, turret, or herself a shield. While the shield holds, the target gains bonus attack damage."
+                    "passive": "",
+                    "active": "Maokai flings a Sapling to the target location, granting sight of the area. Once landed, a Sapling remains stationary for a time or until it reacts to the first nearby visible enemy, chasing them. The Sapling explodes upon colliding with an enemy or when it expires, dealing magic damage to nearby enemies, and slowing them. A sapling's duration when placed in brush scales with Maokai's bonus HP, deals double damage to non-minion targets over 3 bursts, reveals them, and applies a slow scaling off of bonus HP and total AP."
                     
                 },
                 "r": {
-                    "spellName": "Monsoon",
+                    "spellName": "Nature's Grasp",
                     
                     "passive": "",
-                    "active": "Janna unleashes a blast that knocks back all nearby enemies, with the distance and duration being determined by proximity to Janna. Enemies cannot be knocked through terrain by Monsoon. Janna also channels for up to 3 seconds, healing nearby allies."
-            
+                    "active": "Maokai summons a colossal wall of five throny brambles that slowly advances in the target direction, accelerating over time, each stopping when they collide with an enemy champion. Hitting at least one enemy champion grants Maoaki bonus movement speed decaying over 2 seconds. Each bramble deals magic damage to enemies hit and roots them for a time scaling off of distance traveled."            
                 }
             }
         }
