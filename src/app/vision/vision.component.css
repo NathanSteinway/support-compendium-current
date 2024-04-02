@@ -1,0 +1,38 @@
+.flexbox-container {
+    display: inline-flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid #FFC75F;
+    background-color: #0D192B;
+    padding: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.wards-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.ward-icon {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    transition: transform 0.3s ease; 
+}
+
+.ward-icon a img {
+    display: block;
+    width: 120px;
+    height: 120px;
+}
+
+.ward-icon:hover {
+    transform: scale(1.1);
+}
