@@ -3,105 +3,19 @@
 <div class="flexbox-container">
     <h1>Support Item Upgrades</h1>
     <div class="items-container">
-        
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/Bloodsong_item_HD.webp">
-            </a>
+        <button class="item-icon" *ngFor="let item of supportItems">
+          <a>
+            <img src={{item}}>
+          </a>
         </button>
-
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/Dream_Maker_item_HD.webp">
-            </a>
-        </button>
-
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/Celestial_Opposition_item_HD.webp">
-            </a>
-        </button>
-
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/Solstice_Sleigh_item_HD.png">
-            </a>
-        </button>
-
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/zazzaks_realmspike.png">
-            </a>
-        </button>
-    </div>
+      </div>
+      
     <h1>Legendary Items</h1>
     <div class="items-container">
         
-        <button class="item-icon">
+        <button class="item-icon" *ngFor="let item of legendaryItems">
             <a>
-                <img src="../../assets/items/Dawncore_item_HD.webp">
-            </a>
-        </button>
-
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/shurelyas_battlesong.png">
-            </a>
-        </button>
-
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/Echoes_of_Helia_item_HD.png">
-            </a>
-        </button>
-
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/Redemption_item_HD.webp">
-            </a>
-        </button>
-
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/youmoos_ghostblade.png">
-            </a>
-        </button>
-
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/Imperial_Mandate_item.webp">
-            </a>
-        </button>
-
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/Staff_of_Flowing_Water_item_HD.png">
-            </a>
-        </button>
-
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/Umbral_Glaive_item_HD.webp">
-            </a>
-        </button>
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/Mikaels_Blessing.png">
-            </a>
-        </button>
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/Moonstone_Renewer_item_HD.webp">
-            </a>
-        </button>
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/Locket_of_the_Iron_Solari_item_HD.webp">
-            </a>
-        </button>
-        <button class="item-icon">
-            <a>
-                <img src="../../assets/items/zekes_convergence.png">
+                <img src={{item}}>
             </a>
         </button>
     </div>
