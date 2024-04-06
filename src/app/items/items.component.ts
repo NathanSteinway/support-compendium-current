@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common'
 export class ItemsComponent {
 
   // Image Sources for Support Items
+  // This is to be moved into a service for items on next refactor
 
     supportItems = [
       "../../assets/items/Bloodsong_item_HD.webp",
