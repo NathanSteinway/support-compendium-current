@@ -1,20 +1,10 @@
-<div class="flexbox-container">
-    <h1>Support Item Upgrades</h1>
-    <div class="items-container">
-        <button class="item-icon" *ngFor="let item of supportItems">
-          <a>
-            <img src={{item}}>
-          </a>
-        </button>
-      </div>
-      
-    <h1>Legendary Items</h1>
-    <div class="items-container">
-        
-        <button class="item-icon" *ngFor="let item of legendaryItems">
-            <a>
-                <img src={{item}}>
-            </a>
-        </button>
-    </div>
+<div class='flexbox-container' *ngFor="let category of orderedCategories">
+  <h1>{{ category.key }}</h1>
+  <div class="items-container">
+    <button class="item-icon" *ngFor="let item of category.value">
+      <a>
+        <img [src]="item.src" alt="{{ item.name }}">
+      </a>
+    </button>
+  </div>
 </div>

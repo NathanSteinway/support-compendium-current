@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Info, ChampInfoService } from '../champ-info.service';
+import { ChampInfoService } from '../services/champ-info.service';
+import { Info } from '../services/interfaces/champ-info.service.interface'
 
 @Component({
   selector: 'app-champ-page-rakan',

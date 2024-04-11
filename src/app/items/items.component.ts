@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ItemService } from '../services/item.service'
+import { Item } from '../services/interfaces/item.interface'
 
 @Component({
   selector: 'app-items',
@@ -8,33 +10,20 @@ import { CommonModule } from '@angular/common'
   templateUrl: './items.component.html',
   styleUrl: './items.component.css'
 })
-export class ItemsComponent {
+export class ItemsComponent implements OnInit {
 
-  // Image Sources for Support Items
-  // This is to be moved into a service for items on next refactor
+  orderedCategories: {key: string, value: Item[]}[] = [];
 
-    supportItems = [
-      "../../assets/items/Bloodsong_item_HD.webp",
-      "../../assets/items/Celestial_Opposition_item_HD.webp",
-      "../../assets/items/Solstice_Sleigh_item_HD.png",
-      "../../assets/items/Dream_Maker_item_HD.webp",
-      "../../assets/items/zazzaks_realmspike.png"
-    ]
+  constructor(private itemService: ItemService) {}
 
-    legendaryItems = [
-      "../../assets/items/Knights_Vow.png",
-      "../../assets/items/Dawncore_item_HD.webp",
-      "../../assets/items/shurelyas_battlesong.png",
-      "../../assets/items/Echoes_of_Helia_item_HD.png",
-      "../../assets/items/Redemption_item_HD.webp",
-      "../../assets/items/youmoos_ghostblade.png",
-      "../../assets/items/Imperial_Mandate_item.webp",
-      "../../assets/items/Staff_of_Flowing_Water_item_HD.png",
-      "../../assets/items/Umbral_Glaive_item_HD.webp",
-      "../../assets/items/Mikaels_Blessing.png",
-      "../../assets/items/Moonstone_Renewer_item_HD.webp",
-      "../../assets/items/Locket_of_the_Iron_Solari_item_HD.webp",
-      "../../assets/items/zekes_convergence.png"
-    ]
-
+  ngOnInit() {
+    this.itemService.getItems().subscribe({
+      next: (data) => {
+        this.orderedCategories = [
+          { key: 'Support Items', value: data['Support Items'] || [] },
+          { key: 'Legendary Items', value: data['Legendary Items'] || [] }
+        ];
+      }
+    })
   }
+}

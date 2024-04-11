@@ -1,9 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
-export interface Info {
-  champions: any;
-}
+import { Info } from './interfaces/champ-info.service.interface';
 
 @Injectable({
   providedIn: 'root'

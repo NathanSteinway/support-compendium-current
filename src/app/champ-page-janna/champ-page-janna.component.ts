@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Info, ChampInfoService } from '../champ-info.service';
+import { Info } from '../services/interfaces/champ-info.service.interface'
+import { ChampInfoService } from '../services/champ-info.service';
 
 @Component({
   selector: 'app-champ-page-janna',
@@ -13,23 +14,16 @@ import { Info, ChampInfoService } from '../champ-info.service';
 
 export class ChampPageJannaComponent implements OnInit {
 
+  info: Info = { champions: []};
+
   constructor(private champInfoService: ChampInfoService) {}
 
   ngOnInit(): void {
-    this.getChampInfo();
-  }
-
-  getChampInfo(): void {
-    this.champInfoService.getInfo()
-    .subscribe(data => {
-      
-      this.info = { ...data };
-      
+    this.champInfoService.getInfo().subscribe(data => {
+      this.info = data;
     });
   }
-
-  info: Info | undefined;
-
+  
   champName: any;
   spellType: any;
   champId: number = 1
@@ -44,8 +38,8 @@ export class ChampPageJannaComponent implements OnInit {
   ]
 
   showChampInfo(champId: number, spellId: string) {
-    let champion = this.info?.champions[champId]
-    this.champName = champion
+    let champion = this.info.champions[champId]
+    this.champName = champion?.name;
     this.spellType = champion?.spells[spellId]
   }
 }

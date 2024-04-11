@@ -1,0 +1,80 @@
+{
+
+  "Support Items": [
+    {
+      "name": "Bloodsong",
+      "src": "../../assets/items/Bloodsong_item_HD.webp"
+    },
+    {
+      "name": "Celestial Opposition",
+      "src": "../../assets/items/Celestial_Opposition_item_HD.webp"
+    },
+    {
+      "name": "Solstice Sleigh",
+      "src": "../../assets/items/Solstice_Sleigh_item_HD.png"
+    },
+    {
+      "name": "Dream Maker",
+      "src": "../../assets/items/Dream_Maker_item_HD.webp"
+    },
+    {
+      "name": "Zazzak's Realm Spike",
+      "src": "../../assets/items/zazzaks_realmspike.png"
+    }
+  ],
+
+  "Legendary Items": [
+    {
+      "name": "Knight's Vow",
+      "src": "../../assets/items/Knights_Vow.png"
+    },
+    {
+      "name": "Dawncore",
+      "src": "../../assets/items/Dawncore_item_HD.webp"
+    },
+    {
+      "name": "Shurelya's Battlesong",
+      "src": "../../assets/items/shurelyas_battlesong.png"
+    },
+    {
+      "name": "Echoes of Helia",
+      "src": "../../assets/items/Echoes_of_Helia_item_HD.png"
+    },
+    {
+      "name": "Redemption",
+      "src": "../../assets/items/Redemption_item_HD.webp"
+    },
+    {
+      "name": "Youmuu's Ghostblade",
+      "src": "../../assets/items/youmoos_ghostblade.png"
+    },
+    {
+      "name": "Imperial Mandate",
+      "src": "../../assets/items/Imperial_Mandate_item.webp"
+    },
+    {
+      "name": "Staff of Flowing Water",
+      "src": "../../assets/items/Staff_of_Flowing_Water_item_HD.png"
+    },
+    {
+      "name": "Umbral Glaive",
+      "src": "../../assets/items/Umbral_Glaive_item_HD.webp"
+    },
+    {
+      "name": "Mikael's Blessing",
+      "src": "../../assets/items/Mikaels_Blessing.png"
+    },
+    {
+      "name": "Moonstone Renewer",
+      "src": "../../assets/items/Moonstone_Renewer_item_HD.webp"
+    },
+    {
+      "name": "Locket of the Iron Solari",
+      "src": "../../assets/items/Locket_of_the_Iron_Solari_item_HD.webp"
+    },
+    {
+      "name": "Zeke's Convergence",
+      "src": "../../assets/items/zekes_convergence.png"
+    }
+  ]
+}
