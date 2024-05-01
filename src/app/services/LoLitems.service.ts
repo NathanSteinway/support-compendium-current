@@ -1,15 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
-export interface Items {
-  supportItems: any[]
-  legendaryItems: any[]
-}
+import { Items } from './interfaces/LoLitems.service.interface'
 
 @Injectable({
   providedIn: 'root'
 })
-
 
 export class LoLItemsService {
 
