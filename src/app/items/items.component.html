@@ -1,7 +1,7 @@
-<div class="flexbox-container">
+<div class="flexbox-container" *ngIf="items">
     <h1>Support Item Upgrades</h1>
     <div class="items-container">
-        <button class="item-icon" *ngFor="let item of supportItems">
+        <button class="item-icon" *ngFor="let item of items.supportItems">
           <a>
             <img src={{item}}>
           </a>
@@ -11,7 +11,7 @@
     <h1>Legendary Items</h1>
     <div class="items-container">
         
-        <button class="item-icon" *ngFor="let item of legendaryItems">
+        <button class="item-icon" *ngFor="let item of items.legendaryItems">
             <a>
                 <img src={{item}}>
             </a>
