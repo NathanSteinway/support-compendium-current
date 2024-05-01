@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common'
-import { LoLItemsService, Items } from '../LoLlitems.service'
+import { LoLItemsService, Items } from '../LoLitems.service'
 
 @Component({
   selector: 'app-items',
