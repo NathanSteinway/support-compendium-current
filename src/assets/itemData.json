@@ -1,25 +1,85 @@
 {
     "supportItems": [
-        "../../assets/items/Bloodsong_item_HD.webp",
-        "../../assets/items/Celestial_Opposition_item_HD.webp",
-        "../../assets/items/Solstice_Sleigh_item_HD.png",
-        "../../assets/items/Dream_Maker_item_HD.webp",
-        "../../assets/items/zazzaks_realmspike.png"
+        
+        {
+          "name": "Bloodsong",
+          "path": "../../assets/items/Bloodsong_item_HD.webp"
+        },
+
+        {
+          "name": "Celestial Opposition",
+          "path": "../../assets/items/Celestial_Opposition_item_HD.webp"
+        },
+
+        {
+          "name": "Solstice Sleigh",
+          "path": "../../assets/items/Solstice_Sleigh_item_HD.png"
+        },
+
+        {
+          "name": "Dream Maker",
+          "path": "../../assets/items/Dream_Maker_item_HD.webp"
+        },
+
+        {
+          "name": "Zaz'Zak's Realmspike",
+          "path": "../../assets/items/zazzaks_realmspike.png"
+        }
+
       ],
     
       "legendaryItems": [
-        "../../assets/items/Knights_Vow.png",
-        "../../assets/items/Dawncore_item_HD.webp",
-        "../../assets/items/shurelyas_battlesong.png",
-        "../../assets/items/Echoes_of_Helia_item_HD.png",
-        "../../assets/items/Redemption_item_HD.webp",
-        "../../assets/items/youmoos_ghostblade.png",
-        "../../assets/items/Imperial_Mandate_item.webp",
-        "../../assets/items/Staff_of_Flowing_Water_item_HD.png",
-        "../../assets/items/Umbral_Glaive_item_HD.webp",
-        "../../assets/items/Mikaels_Blessing.png",
-        "../../assets/items/Moonstone_Renewer_item_HD.webp",
-        "../../assets/items/Locket_of_the_Iron_Solari_item_HD.webp",
-        "../../assets/items/zekes_convergence.png"
+
+        {
+          "name": "Knight's Vow",
+          "path": "../../assets/items/Knights_Vow.png"
+        },
+
+        {
+          "name": "Dawncore",
+          "path": "../../assets/items/Dawncore_item_HD.webp"
+        },
+        {
+          "name": "Echoes of Helia",
+          "path": "../../assets/items/Echoes_of_Helia_item_HD.png"
+        },
+        {
+          "name": "Redemption",
+          "path": "../../assets/items/Redemption_item_HD.webp"
+        },
+        {
+          "name": "Youmoo's Ghostblade",
+          "path": "../../assets/items/youmoos_ghostblade.png"
+        },
+        {
+          "name": "Imperial Mandate",
+          "path": "../../assets/items/Imperial_Mandate_item.webp"
+
+        },
+        {
+          "name": "Staff of Flowing Water",
+          "path": "../../assets/items/Staff_of_Flowing_Water_item_HD.png"
+        },
+        {
+          "name": "Umbral Glaive",
+          "path": "../../assets/items/Umbral_Glaive_item_HD.webp"
+
+        },
+        {
+          "name": "Mikael's Crucible",
+          "path": "../../assets/items/Mikaels_Blessing.png"
+        },
+        {
+          "name": "Moonstone Renewer",
+          "path": "../../assets/items/Moonstone_Renewer_item_HD.webp"
+        },
+        {
+          "name": "Locket of the Iron Solari",
+          "path": "../../assets/items/Locket_of_the_Iron_Solari_item_HD.webp"
+        },
+        {
+          "name": "Zeke's Convergence",
+          "path": "../../assets/items/zekes_convergence.png"
+        }
       ]
 }

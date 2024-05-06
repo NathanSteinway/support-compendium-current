@@ -3,7 +3,7 @@
     <div class="items-container">
         <button class="item-icon" *ngFor="let item of items.supportItems">
           <a>
-            <img src={{item}}>
+            <img src={{item.path}}>
           </a>
         </button>
       </div>
@@ -13,7 +13,7 @@
         
         <button class="item-icon" *ngFor="let item of items.legendaryItems">
             <a>
-                <img src={{item}}>
+                <img src={{item.path}}>
             </a>
         </button>
     </div>
