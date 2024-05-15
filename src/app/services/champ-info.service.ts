@@ -8,7 +8,7 @@ import { Info } from './interfaces/champ-info.service.interface';
 
 export class ChampInfoService {
 
-  infoURL = '../assets/champData.json'
+  infoURL = '../assets/dataSheets/champData.json'
 
   constructor(private http: HttpClient) { }
 

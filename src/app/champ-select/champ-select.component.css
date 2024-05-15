@@ -1,21 +1,15 @@
 .flexbox-container {
-    display: inline-flex;
-    width: auto;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
-    color: white;
     justify-content: center;
-    text-align: center;
-    border: 3px solid #FFC75F;
-    background-color: #0D192B;
-    padding: 20px;
-    margin: 20px;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .champ-pool-container {
     display:flex;
-    justify-content: center;
-    align-items: center;
     gap: 15px;
 }
 
@@ -30,7 +24,7 @@
 
 .champ-icon a img {
     display: block;
-    width: auto;
+    width: 160px;
     height: auto;
 }
 

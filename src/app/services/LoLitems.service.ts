@@ -8,7 +8,7 @@ import { Items } from './interfaces/LoLitems.service.interface'
 
 export class LoLItemsService {
 
-  infoURL = '../assets/itemData.json'
+  infoURL = '../assets/dataSheets/itemData.json'
 
   constructor(private http: HttpClient) { }
 

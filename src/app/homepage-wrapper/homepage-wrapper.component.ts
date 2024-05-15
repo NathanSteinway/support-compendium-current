@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { ChampSelectComponent } from '../champ-select/champ-select.component'
 import { GuidesComponent } from '../guides/guides.component'
 
