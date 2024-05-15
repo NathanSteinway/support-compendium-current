@@ -2,6 +2,7 @@ export interface SpellDetail {
     spellName: string;
     passive?: string;
     active?: string;
+    icon: string;
   }
   
 export interface Spells {
@@ -16,6 +17,8 @@ export interface Spells {
 
 export interface Champion {
 name: string;
+render: string;
+square: string;
 spells: Spells;
 }
 
