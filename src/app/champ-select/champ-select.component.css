@@ -2,15 +2,14 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .champ-pool-container {
     display:flex;
-    gap: 15px;
 }
 
 .champ-icon {
@@ -20,12 +19,6 @@
     background-color: transparent;
     outline: none;
     transition: transform 0.3s ease; 
-}
-
-.champ-icon a img {
-    display: block;
-    width: 160px;
-    height: auto;
 }
 
 .champ-icon:hover {

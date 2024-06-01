@@ -14,6 +14,7 @@ import { Info } from '../services/interfaces/champ-info.service.interface'
 export class ChampSelectComponent implements OnInit {
 
   champions: any[] = [];
+  square: any;
 
   constructor(
     private router: Router,
@@ -21,17 +22,8 @@ export class ChampSelectComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.getChampInfo();
-
     this.champInfoService.getInfo().subscribe(data => {
       this.champions = data.champions
-    })
-  }
-
-  getChampInfo(): void {
-    this.champInfoService.getInfo()
-    .subscribe(data => {
-      this.info = {...data}
     })
   }
 

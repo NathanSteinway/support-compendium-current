@@ -4,7 +4,7 @@
         {
             "name": "Rakan",
             "render": "../champions/renders/Rakan_Render.webp",
-            "square": "../champions/squares/RakanSquare",
+            "square": "assets/champions/squares/RakanSquare.webp",
             "spells": {
                 "passive_1": {
                     "spellName": "Fey Feathers",
@@ -48,7 +48,7 @@
         {
             "name": "Janna",
             "render": "../champions/renders/Janna_Render.webp",
-            "square": "../champions/squares/JannaSquare",
+            "square": "assets/champions/squares/JannaSquare.webp",
             "spells": {
                 "passive": {
                     "spellName": "Tailwind",
@@ -91,7 +91,7 @@
         {
             "name": "Maokai",
             "render": "../champions/renders/Maokai_Render.webp",
-            "square": "../champions/squares/MaokaiSquare",
+            "square": "assets/champions/squares/MaokaiSquare.webp",
             "spells": {
                 "passive": {
                     "spellName": "Sap Magic",
