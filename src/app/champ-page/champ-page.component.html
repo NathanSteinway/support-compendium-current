@@ -1,5 +1,8 @@
-<div *ngIf="info">
-    <div *ngFor="let champ of info.champions">
-        <p>{{champ.name}}</p>
-    </div>
+<div *ngIf="champion">
+    <h2>{{ champion.name }}</h2>
+
+    <img [src]="champion.square" alt="{{ champion.name }}">
+
+    <img [src]="champion.render" alt="{{ champion.name }}">
 </div>
+  

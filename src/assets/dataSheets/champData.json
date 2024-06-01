@@ -3,7 +3,7 @@
         
         {
             "name": "Rakan",
-            "render": "../champions/renders/Rakan_Render.webp",
+            "render": "assets/champions/renders/Rakan_Render.webp",
             "square": "assets/champions/squares/RakanSquare.webp",
             "spells": {
                 "passive_1": {
@@ -47,7 +47,7 @@
 
         {
             "name": "Janna",
-            "render": "../champions/renders/Janna_Render.webp",
+            "render": "assets/champions/renders/Janna_Render.webp",
             "square": "assets/champions/squares/JannaSquare.webp",
             "spells": {
                 "passive": {
@@ -90,7 +90,7 @@
 
         {
             "name": "Maokai",
-            "render": "../champions/renders/Maokai_Render.webp",
+            "render": "assets/champions/renders/Maokai_Render.webp",
             "square": "assets/champions/squares/MaokaiSquare.webp",
             "spells": {
                 "passive": {

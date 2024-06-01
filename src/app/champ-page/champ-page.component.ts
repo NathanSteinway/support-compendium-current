@@ -14,7 +14,6 @@ import { ActivatedRoute } from '@angular/router'
 export class ChampPageComponent implements OnInit {
 
   champion: any;
-  square: any;
   
   constructor(
     private route: ActivatedRoute,
@@ -28,9 +27,11 @@ export class ChampPageComponent implements OnInit {
       const championName = params.get('name');
       this.champInfoService.getInfo().subscribe(data => {
         this.champion = data.champions.find((champ: any) => champ.name === championName);
-        this.square = this.champion.square;
+
         });
       });
+    
+
   }
 
   getChampInfo(): void {
