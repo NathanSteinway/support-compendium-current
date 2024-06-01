@@ -1,8 +1,12 @@
 <div *ngIf="champion">
-    <h2>{{ champion.name }}</h2>
+    <div>
+        <h1>{{ champion.name }}</h1>
+        <h2>{{ champion.lore}}</h2>
+    </div>
 
-    <img [src]="champion.square" alt="{{ champion.name }}">
-
-    <img [src]="champion.render" alt="{{ champion.name }}">
+    <div>
+        <img [src]="champion.render" alt="{{ champion.name }}">
+    </div>
 </div>
+
   

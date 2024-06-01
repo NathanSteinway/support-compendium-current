@@ -18,7 +18,6 @@ export class ChampInfoService {
       this.infoURL
     )
   }
-
 }
 
 

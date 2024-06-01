@@ -21,24 +21,12 @@ export class ChampPageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.getChampInfo();
-
     this.route.paramMap.subscribe(params => {
       const championName = params.get('name');
       this.champInfoService.getInfo().subscribe(data => {
         this.champion = data.champions.find((champ: any) => champ.name === championName);
-
-        });
       });
-    
-
-  }
-
-  getChampInfo(): void {
-    this.champInfoService.getInfo()
-    .subscribe(data => {
-      this.info = {...data}
-    })
+    });
   }
 
   info: Info | undefined;
