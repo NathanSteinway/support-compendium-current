@@ -1,12 +1,20 @@
-<div *ngIf="champion">
-    <div>
+<div class="primary-content" *ngIf="champion">
+    <div class="content">
+
         <h1>{{ champion.name }}</h1>
-        <h2>{{ champion.lore}}</h2>
+        <h2>{{ champion.lore }}</h2>
+
+        <div class="spells" >
+
+            <img *ngFor="let spell of champion.spells" class='spell-icon' src={{spell.icon}}>
+
+        </div>
+
     </div>
 
-    <div>
-        <img [src]="champion.render" alt="{{ champion.name }}">
-    </div>
+
+
+    <img class='render' [src]="champion.render" alt="{{ champion.name }}">
 </div>
 
   

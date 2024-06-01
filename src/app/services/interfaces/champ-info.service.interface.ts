@@ -1,28 +1,21 @@
-export interface SpellDetail {
-    spellName: string;
-    passive?: string;
-    active?: string;
-    icon: string;
-  }
-  
-export interface Spells {
-  passive_1?: SpellDetail;
-  passive_2?: SpellDetail;
-  q?: SpellDetail;
-  w?: SpellDetail;
-  e?: SpellDetail;
-  r?: SpellDetail;
-  [key: string]: SpellDetail | undefined;
+export interface Spell {
+  spellName: string;
+  passive?: string;
+  active?: string;
+  icon: string;
 }
 
 export interface Champion {
-name: string;
-render: string;
-square: string;
-spells: Spells;
+  name: string;
+  render: string;
+  square: string;
+  lore: string;
+  spells: {
+    [key: string]: Spell;
+  }
 }
 
 export interface Info {
-champions: Champion[];
+  champions: Champion[];
 }
   
