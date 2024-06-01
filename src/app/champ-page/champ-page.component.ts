@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common'
 import { ChampInfoService } from '../services/champ-info.service'
 import { Info } from '../services/interfaces/champ-info.service.interface'
+import { ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-champ-page',
@@ -12,10 +13,22 @@ import { Info } from '../services/interfaces/champ-info.service.interface'
 })
 export class ChampPageComponent implements OnInit {
 
-  constructor(private champInfoService: ChampInfoService) {}
+  champion!: any;
+
+  constructor(
+    private route: ActivatedRoute,
+    private champInfoService: ChampInfoService
+  ) {}
 
   ngOnInit(): void {
     this.getChampInfo();
+
+    this.route.paramMap.subscribe(params => {
+      const championName = params.get('name');
+      this.champInfoService.getInfo().subscribe(data => {
+        this.champion = data.champions.find((champ: any) => champ.name === championName);
+        });
+      });
   }
 
   getChampInfo(): void {

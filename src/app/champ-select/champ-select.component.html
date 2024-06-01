@@ -1,11 +1,5 @@
-
-    <div class="flexbox-container">
-        <div class="champ-pool-container">
-            <button class="champ-icon">
-                <a routerLink="/champ-page">
-                    <img src="../../assets/champions/squares/RakanSquare.webp">
-                </a>
-            </button>
-        </div>
-    </div>
+<div *ngFor="let champion of champions">
+    <button (click)="navToChampPage(champion.name)">{{ champion.name }}</button>
+</div>
+  
 

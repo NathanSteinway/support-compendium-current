@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { Info } from './interfaces/champ-info.service.interface';
 
 @Injectable({
@@ -12,11 +13,10 @@ export class ChampInfoService {
 
   constructor(private http: HttpClient) { }
 
-  getInfo() {
+  getInfo(): Observable<Info> {
     return this.http.get<Info>(
       this.infoURL
     )
-
   }
 
 }
