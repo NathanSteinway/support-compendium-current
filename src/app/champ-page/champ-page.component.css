@@ -1,3 +1,6 @@
+/* Accent Colors */
+/* #CCE4F7 (purp) #73CFEB (blau) #AFE4F7 (red) #CCE4F7 (yellow) */
+
 .primary-content {
     display: flex;
 }
@@ -11,13 +14,14 @@
     text-align: center;
 }
 
-.spells {
-    display:flex;
-    gap: 25px;
+.spellBtn {
+    background: transparent;
+    border: none;
 }
 
 .spell-icon:hover {
-    transform: scale(1.1)
+    transform: scale(1.2);
+    transition-duration: 0.4s;
 }
 
 .render {

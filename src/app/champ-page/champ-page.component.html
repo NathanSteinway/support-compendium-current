@@ -4,15 +4,24 @@
         <h1>{{ champion.name }}</h1>
         <h2>{{ champion.lore }}</h2>
 
-        <div class="spells" >
+        <div>
 
-            <img *ngFor="let spell of champion.spells" class='spell-icon' src={{spell.icon}}>
+            <div>
+                <button id={{spell.id}} (click)="hideToggle($event)" class="spellBtn" *ngFor="let spell of champion.spells">
+                    <img class='spell-icon' src={{spell.icon}}>
+                </button>
+            </div>
+
+            <!-- element conditionally rendered based on value of expression -->
+            <div *ngIf="spellActive || spellPassive">
+                <!-- conditionally display paragraphs -->
+                <p *ngIf="spellActive">Active: {{spellActive}}</p>
+                <p *ngIf="spellPassive">Passive: {{spellPassive}}</p>
+            </div>
 
         </div>
 
     </div>
-
-
 
     <img class='render' [src]="champion.render" alt="{{ champion.name }}">
 </div>
