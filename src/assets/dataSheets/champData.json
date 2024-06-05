@@ -96,6 +96,164 @@
                     "icon": "assets/spells/Janna/Monsoon.png"
                 }
             ]
+        },
+        {
+            "name": "Nami",
+            "render": "assets/champions/renders/Nami_Render.webp",
+            "square": "assets/champions/squares/NamiSquare.webp",
+            "lore": "A headstrong young vastaya of the seas, Nami was the first of the Marai tribe to leave the waves and venture onto dry land, when their ancient accord with the Targonians was broken. With no other option, she took it upon herself to complete the sacred ritual that would ensure the safety of her people. Amidst the chaos of this new age, Nami faces an uncertain future with grit and determination, using her Tidecaller staff to summon the strength of the oceans themselves.",
+            "spells": [
+                {
+                    "id": "p1",
+                    "spellName": "Surging Tides",
+                    "passive": "Nami's Abilities grant bonus movement speed to allied champions hit, decaying over time. The bonus is doubled from Tidal Wave.",
+                    "icon": "assets/spells/Nami/Surging_Tides.webp"
+                },
+                
+                {
+                    "id": "p2",
+                    "spellName": "",
+                    "passive": "",
+                    "icon": ""
+                },
+    
+                {
+                    "id": "q",
+                    "spellName": "Aqua Prison",
+                    "passive": "",
+                    "active": "Nami launches a bubble at the target location that lands after a delay, dealing magic damage to enemies hit and suspending them, during which they are revealed.",
+                    "icon": "assets/spells/Nami/Aqua_Prison.webp"
+                },
+                {
+                    "id": "w",
+                    "spellName": "Ebb and Flow",
+                    "passive": "",
+                    "active": "Nami unleashes a stream of water onto the target champion or herself, which then bounces to nearby unaffected champions up to twice, alternating between enemies and allies and Nami.",
+                    "icon": "assets/spells/Nami/Ebb_and_Flow.webp"
+                },
+                {
+                    "id": "e",
+                    "spellName": "Tidecaller's Blessing",
+                    "passive": "",
+                    "active": "Nami blesses herself or an allied champion for 6 seconds, empowering their next 3 basic attacks or abilities to each deal bonus magic damage and slow enemies.",
+                    "icon": "assets/spells/Nami/Tidecallers_Blessing.webp"
+                },
+                {
+                    "id": "r",
+                    "spellName": "Tidal Wave",
+                    "passive": "",
+                    "active": "Nami surges a tidal wave in the target direction, granting sight around its trajectory as it travels, dealing magic damage to enemies hit, knocking them up and slowing them for a duration scaling with distance traveled.",
+                    "icon": "assets/spells/Nami/Tidal_Wave.webp"
+                }
+            ]
+        },
+        {
+            "name": "Sona",
+            "render": "assets/champions/renders/Sona_Render.webp",
+            "square": "assets/champions/squares/SonaSquare.webp",
+            "lore": "Sona is a virtuoso of the stringed etwahl, speaking only through her graceful chords and vibrant arias. Her genteel manner has endeared her to the Demacian nobility, though some speculate her arresting melodies actually emanate magic — a dangerous prospect in the kingdom. Silent to outsiders but understood easily enough by close companions, Sona plucks her harmonies not only to soothe injured allies, but also to strike down unsuspecting enemies.",
+            "spells": [
+                {
+                    "id": "p1",
+                    "spellName": "Power Chord - Accelerando",
+                    "passive": "Sona generates a stack of Accelerando each time she hits an enemy champion with Hymn of Valor and each time she mitigates sufficient damage or heals damaged allies with Aria of Perseverance, stacking up to 120 times. At maximum stacks, she instead reduces the current cooldown of Crescendo each time. For each stack of Accelerando, Sona gains basic ability haste to a cap.",
+                    "icon": "assets/spells/Sona/Power_Chord.webp"
+                },
+                
+                {
+                    "id": "p2",
+                    "spellName": "Melody",
+                    "passive": "Whenever Sona casts a basic ability, her other basic abilities incur a global cooldown and she generates a unique aura that empowers herself and nearby allied champions.",
+                    "icon": "assets/spells/Sona/Power_Chord_3.webp"
+                },
+
+                {
+                    "id": "p3",
+                    "spellName": "Power Chord",
+                    "passive": "Sona's basic abilities generate a stack of Power Chord, stacking up to 3 times. At 3 stacks, her next basic attack is empowered to consume them all to have an uncancellable windup, deal bonus magic damage, and apply an additional effect based on the last basic ability she cast. Hymn of Valor: Staccato deals modified magic damage, Aria of Perseverance:Diminuendo reduces the target's size and damage dealt, and Song of Celerity:Tempo slows the target capped at a max of 99%.",
+                    "icon": "assets/spells/Sona/Power_Chord_2.webp"
+
+                },
+    
+                {
+                    "id": "q",
+                    "spellName": "Hymn of Valor",
+                    "passive": "Melody - Sona and tagged allied champions deal bonus magic damage on their next basic attack within 5 seconds.",
+                    "active": "Sona sends out bolts of sound to the two nearest visible enemies, prioritizing champions. Each bolt deals magic damage and grants sight of the area around the target for 1 second. Sona gains a stack of Accelerando for each bolt that hits an enemy champion.",
+                    "icon": "assets/spells/Sona/Hymn_of_Valor.webp"
+                },
+                {
+                    "id": "w",
+                    "spellName": "Aria of Perseverence",
+                    "passive": "Sona and tagged allied champions are granted a shield. Sona gains a stack of Accelerando whenever she heals a wounded ally or shields a minimum amount of damage for an ally with Aria of Perseverance.",
+                    "active": "Sona heals herself and sends out a tone to heal with the most wounded allied champion nearby.",
+                    "icon": "assets/spells/Sona/Aria_of_Perseverance.webp"
+                },
+                {
+                    "id": "e",
+                    "spellName": "Song of Celerity",
+                    "passive": "Tagged allied champions gain bonus movement speed for 3 seconds.",
+                    "active": "Sona gains movement speed. If she takes damage during this time, the duration ends prematurely once or if a few seconds have elapsed.",
+                    "icon": "assets/spells/Sona/Song_of_Celerity.webp"
+                },
+                {
+                    "id": "r",
+                    "spellName": "Crescendo",
+                    "passive": "",
+                    "active": "Sona strikes an irresistible chord in the target direction that deals magic damage to enemies hit and stuns them.",
+                    "icon": "assets/spells/Sona/Crescendo.webp"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "render": "assets/champions/renders/_Render.webp",
+            "square": "assets/champions/squares/Square.webp",
+            "lore": "",
+            "spells": [
+                {
+                    "id": "p1",
+                    "spellName": "",
+                    "passive": "",
+                    "icon": ""
+                },
+                
+                {
+                    "id": "p2",
+                    "spellName": "",
+                    "passive": "",
+                    "icon": ""
+                },
+    
+                {
+                    "id": "q",
+                    "spellName": "",
+                    "passive": "",
+                    "active": "",
+                    "icon": ""
+                },
+                {
+                    "id": "w",
+                    "spellName": "",
+                    "passive": "",
+                    "active": "",
+                    "icon": ""
+                },
+                {
+                    "id": "e",
+                    "spellName": "",
+                    "passive": "",
+                    "active": "",
+                    "icon": ""
+                },
+                {
+                    "id": "r",
+                    "spellName": "",
+                    "passive": "",
+                    "active": "",
+                    "icon": ""
+                }
+            ]
         }
     ]
 }
