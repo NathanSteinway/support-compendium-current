@@ -1,23 +1,28 @@
-<div class="primary-content bgImg" *ngIf="champion" style="background-image: url({{splashArt}});">
-    
+
+<!-- hoping to replace this hideous line later, the style segment has got to go -->
+<div class="primary-content bgImg overlay" style="background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 24.44%, rgba(0, 0, 0, 0.6) 56.63%), url({{splashArt}})" *ngIf="champion">
+
     <div class="content">
 
+        <h2>{{ champion.nickname }}</h2>
         <h1>{{ champion.name }}</h1>
-        <h2>{{ champion.lore }}</h2>
-
-        <div>
+        <p>{{champion.lore}}</p>
 
             <div>
-                <button id={{spell.id}} (click)="hideToggle($event)" class="spellBtn" *ngFor="let spell of champion.spells">
-                    <img class='spell-icon' src={{spell.icon}}>
-                </button>
-            </div>
 
-            <!-- element conditionally rendered based on value of expression -->
-            <div *ngIf="spellActive || spellPassive">
-                <!-- conditionally display paragraphs -->
-                <p *ngIf="spellActive">Active: {{spellActive}}</p>
-                <p *ngIf="spellPassive">Passive: {{spellPassive}}</p>
+                <div>
+                    <button id={{spell.id}} (click)="hideToggle($event)" class="spellBtn" *ngFor="let spell of champion.spells">
+                        <img class='spell-icon' src={{spell.icon}}>
+                    </button>
+                </div>
+
+                <!-- element conditionally rendered based on value of expression -->
+                <div *ngIf="spellActive || spellPassive">
+                    <!-- conditionally display paragraphs -->
+                    <p *ngIf="spellActive">Active: {{spellActive}}</p>
+                    <p *ngIf="spellPassive">Passive: {{spellPassive}}</p>
+                </div>
+
             </div>
 
         </div>
@@ -26,7 +31,6 @@
 
     <!-- <img class='render' [src]="champion.render" alt="{{ champion.name }}"> -->
     
-    
-</div>
+
 
   

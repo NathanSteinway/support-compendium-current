@@ -1,8 +1,6 @@
-/* Accent Colors */
-/* #CCE4F7 (purp) #73CFEB (blau) #AFE4F7 (red) #CCE4F7 (yellow) */
-
 .primary-content{
     display:flex;
+    align-items: center;
     width: 100%;
     height: 100vh;
 }
@@ -16,12 +14,33 @@
 }
 
 .content {
-    width: 25%;
-    padding: 1em;
+    padding-left: 200px;
+    z-index: 1;
+    max-width: 600px;
 }
 
-.content h1 {
-    text-align: center;
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    color: #ffc107;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ccc;
 }
 
 .spellBtn {

@@ -51,6 +51,7 @@
         },
         {
             "name": "Janna",
+            "nickname": "The Storm's Fury",
             "render": "assets/champions/renders/Janna_Render.webp",
             "square": "assets/champions/squares/JannaSquare.webp",
             "bg": "../../assets/champions/splash/Janna_Splash.webp",
