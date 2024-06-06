@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Renderer2} from '@angular/core';
 import { CommonModule } from '@angular/common'
 import { ChampInfoService } from '../services/champ-info.service'
 import { Info } from '../services/interfaces/champ-info.service.interface'
@@ -17,6 +17,7 @@ export class ChampPageComponent implements OnInit {
   champion: any;
   spellActive: string = '';
   spellPassive: string = '';
+  splashArt: string = '';
 
   // lastClicked starts null to mimick an "neutral" state that shows the button hasn't been clicked yet.
   lastClicked: string | null = null;
@@ -26,7 +27,8 @@ export class ChampPageComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private champInfoService: ChampInfoService,
-    private scriptStoreService: ScriptStoreService
+    private scriptStoreService: ScriptStoreService,
+    private renderer: Renderer2
   ) {}
 
   ngOnInit(): void {
@@ -34,13 +36,14 @@ export class ChampPageComponent implements OnInit {
       const championName = params.get('name');
       this.champInfoService.getInfo().subscribe(data => {
         this.champion = data.champions.find((champ: any) => champ.name === championName);
+        this.splashArt = this.champion.bg
       });
     });
 
-    
     this.scriptStoreService.shyElement$.subscribe(isVisible => {
       this.isTextVisible = isVisible;
     });
+
   }
 
   // hideToggle takes event as arg, classified as Event interface

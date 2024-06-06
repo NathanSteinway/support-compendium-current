@@ -1,5 +1,14 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+
     font-family: Arial, sans-serif;
     background-color: #1F1F1F;
     background-size: cover;
@@ -13,7 +22,15 @@ body {
             1px -1px 0 #000,
         -1px 1px 0 #000,
             1px 1px 0 #000;   
-}
+  }
+  
+  app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  
 
 
 

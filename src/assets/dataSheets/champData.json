@@ -1,10 +1,10 @@
 {
     "champions": [
-        
         {
             "name": "Rakan",
             "render": "assets/champions/renders/Rakan_Render.webp",
             "square": "assets/champions/squares/RakanSquare.webp",
+            "bg": "../../assets/champions/splash/Rakan_Splash.webp",
             "lore": "As mercurial as he is charming, Rakan is an infamous vastayan troublemaker and the greatest battle-dancer in Lhotlan tribal history. To the humans of the Ionian highlands, his name had long been synonymous with wild festivals, uncontrollable parties, and anarchic music. But this energetic, traveling showman has left his old life behind, dedicating himself to the cause of his lover, the rebel Xayah. Together, they seek to free Ionia’s wild magic, restoring the vastaya’s birthright.",
             "spells": [
                 {
@@ -13,14 +13,12 @@
                     "passive": "Periodically, Rakan grants himself a shield that lasts until broken. After being out of combat for 5 seconds, any leftover shield will be restored to maximum value. Rakan's basic attacks and ability hits reduce Fey Feathers' Cooldown by 1 second for each enemy champion hit.",
                     "icon": "assets/spells/Rakan/Fey_Feathers.png"
                 },
-                
                 {
                     "id": "p2",
                     "spellName": "Lover's Leap",
                     "passive": "If either Rakan or Xayah is channeling Recall, the other may move nearby and channel their own to sync their Recall time to their partner's Recall time.",
                     "icon": "assets/spells/Rakan/Lovers_Leap.png"
                 },
-    
                 {
                     "id": "q",
                     "spellName": "Gleaming Quill",
@@ -50,14 +48,12 @@
                     "icon": "assets/spells/Rakan/The_Quickness.png"
                 }
             ]
-            
-            
         },
-
         {
             "name": "Janna",
             "render": "assets/champions/renders/Janna_Render.webp",
             "square": "assets/champions/squares/JannaSquare.webp",
+            "bg": "../../assets/champions/splash/Janna_Splash.webp",
             "lore": "An ancient and mysterious wind spirit, Janna has come to protect the dispossessed of Zaun. While her presence is most often felt as a soothing breeze or a ferocious tempest, she also can manifest in corporeal form as an ethereal figure, comforting the downtrodden. Over the eons, Janna has witnessed the rise and fall of civilizations. Through it all, she remains steadfast as a beacon of hope to those in need.",
             "spells": [
                 {
@@ -68,29 +64,28 @@
                 },
                 {
                     "id": "q",
-                    "spellName": "Howling Gale",                    
+                    "spellName": "Howling Gale",
                     "passive": "",
                     "active": "Janna summons a whirlwind at her current location that charges up over time, increasing it's range, speed, damage, and knockup duration every second. Howling Gale can be recast at any time within the duration, and does so automatically after the duration expires.",
                     "icon": "assets/spells/Janna/Howling_Gale.png"
                 },
                 {
                     "id": "w",
-                    "spellName": "Zephyr",                  
+                    "spellName": "Zephyr",
                     "passive": "Janna is ghosted and gains bonus movement speed.",
                     "active": "Janna sends an air elemental at the target enemy that deals magic damage and slows them, capped at 99%.",
                     "icon": "assets/spells/Janna/Zephyr.png"
-                    
                 },
                 {
                     "id": "e",
-                    "spellName": "Eye of the Storm",                    
+                    "spellName": "Eye of the Storm",
                     "passive": "Whenever Janna's abilities slow or knock up at least one enemy champion, a portion of Eye of the Storm's cooldown is refunded. This may occur once per spell cast.",
                     "active": "Janna grants the target allied champion, turret, or herself a shield. While the shield holds, the target gains bonus attack damage.",
                     "icon": "assets/spells/Janna/Eye_of_the_Storm.png"
                 },
                 {
                     "id": "r",
-                    "spellName": "Monsoon",    
+                    "spellName": "Monsoon",
                     "passive": "",
                     "active": "Janna unleashes a blast that knocks back all nearby enemies, with the distance and duration being determined by proximity to Janna. Enemies cannot be knocked through terrain by Monsoon. Janna also channels for up to 3 seconds, healing nearby allies.",
                     "icon": "assets/spells/Janna/Monsoon.png"
@@ -101,6 +96,7 @@
             "name": "Nami",
             "render": "assets/champions/renders/Nami_Render.webp",
             "square": "assets/champions/squares/NamiSquare.webp",
+            "bg": "../../assets/champions/splash/Nami_Splash.webp",
             "lore": "A headstrong young vastaya of the seas, Nami was the first of the Marai tribe to leave the waves and venture onto dry land, when their ancient accord with the Targonians was broken. With no other option, she took it upon herself to complete the sacred ritual that would ensure the safety of her people. Amidst the chaos of this new age, Nami faces an uncertain future with grit and determination, using her Tidecaller staff to summon the strength of the oceans themselves.",
             "spells": [
                 {
@@ -109,14 +105,12 @@
                     "passive": "Nami's Abilities grant bonus movement speed to allied champions hit, decaying over time. The bonus is doubled from Tidal Wave.",
                     "icon": "assets/spells/Nami/Surging_Tides.webp"
                 },
-                
                 {
                     "id": "p2",
                     "spellName": "",
                     "passive": "",
                     "icon": ""
                 },
-    
                 {
                     "id": "q",
                     "spellName": "Aqua Prison",
@@ -151,6 +145,7 @@
             "name": "Sona",
             "render": "assets/champions/renders/Sona_Render.webp",
             "square": "assets/champions/squares/SonaSquare.webp",
+            "bg": "../../assets/champions/splash/Sona_Splash.webp",
             "lore": "Sona is a virtuoso of the stringed etwahl, speaking only through her graceful chords and vibrant arias. Her genteel manner has endeared her to the Demacian nobility, though some speculate her arresting melodies actually emanate magic — a dangerous prospect in the kingdom. Silent to outsiders but understood easily enough by close companions, Sona plucks her harmonies not only to soothe injured allies, but also to strike down unsuspecting enemies.",
             "spells": [
                 {
@@ -159,22 +154,18 @@
                     "passive": "Sona generates a stack of Accelerando each time she hits an enemy champion with Hymn of Valor and each time she mitigates sufficient damage or heals damaged allies with Aria of Perseverance, stacking up to 120 times. At maximum stacks, she instead reduces the current cooldown of Crescendo each time. For each stack of Accelerando, Sona gains basic ability haste to a cap.",
                     "icon": "assets/spells/Sona/Power_Chord.webp"
                 },
-                
                 {
                     "id": "p2",
                     "spellName": "Melody",
                     "passive": "Whenever Sona casts a basic ability, her other basic abilities incur a global cooldown and she generates a unique aura that empowers herself and nearby allied champions.",
                     "icon": "assets/spells/Sona/Power_Chord_3.webp"
                 },
-
                 {
                     "id": "p3",
                     "spellName": "Power Chord",
                     "passive": "Sona's basic abilities generate a stack of Power Chord, stacking up to 3 times. At 3 stacks, her next basic attack is empowered to consume them all to have an uncancellable windup, deal bonus magic damage, and apply an additional effect based on the last basic ability she cast. Hymn of Valor: Staccato deals modified magic damage, Aria of Perseverance:Diminuendo reduces the target's size and damage dealt, and Song of Celerity:Tempo slows the target capped at a max of 99%.",
                     "icon": "assets/spells/Sona/Power_Chord_2.webp"
-
                 },
-    
                 {
                     "id": "q",
                     "spellName": "Hymn of Valor",
@@ -202,56 +193,6 @@
                     "passive": "",
                     "active": "Sona strikes an irresistible chord in the target direction that deals magic damage to enemies hit and stuns them.",
                     "icon": "assets/spells/Sona/Crescendo.webp"
-                }
-            ]
-        },
-        {
-            "name": "",
-            "render": "assets/champions/renders/_Render.webp",
-            "square": "assets/champions/squares/Square.webp",
-            "lore": "",
-            "spells": [
-                {
-                    "id": "p1",
-                    "spellName": "",
-                    "passive": "",
-                    "icon": ""
-                },
-                
-                {
-                    "id": "p2",
-                    "spellName": "",
-                    "passive": "",
-                    "icon": ""
-                },
-    
-                {
-                    "id": "q",
-                    "spellName": "",
-                    "passive": "",
-                    "active": "",
-                    "icon": ""
-                },
-                {
-                    "id": "w",
-                    "spellName": "",
-                    "passive": "",
-                    "active": "",
-                    "icon": ""
-                },
-                {
-                    "id": "e",
-                    "spellName": "",
-                    "passive": "",
-                    "active": "",
-                    "icon": ""
-                },
-                {
-                    "id": "r",
-                    "spellName": "",
-                    "passive": "",
-                    "active": "",
-                    "icon": ""
                 }
             ]
         }
