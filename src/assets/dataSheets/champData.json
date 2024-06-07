@@ -2,6 +2,7 @@
     "champions": [
         {
             "name": "Rakan",
+            "nickname": "The Charmer",
             "render": "assets/champions/renders/Rakan_Render.webp",
             "square": "assets/champions/squares/RakanSquare.webp",
             "bg": "../../assets/champions/splash/Rakan_Splash.webp",
@@ -95,6 +96,7 @@
         },
         {
             "name": "Nami",
+            "nickname": "The Tidecaller",
             "render": "assets/champions/renders/Nami_Render.webp",
             "square": "assets/champions/squares/NamiSquare.webp",
             "bg": "../../assets/champions/splash/Nami_Splash.webp",
@@ -144,6 +146,7 @@
         },
         {
             "name": "Sona",
+            "nickname": "Maven of the Strings",
             "render": "assets/champions/renders/Sona_Render.webp",
             "square": "assets/champions/squares/SonaSquare.webp",
             "bg": "../../assets/champions/splash/Sona_Splash.webp",
@@ -194,6 +197,88 @@
                     "passive": "",
                     "active": "Sona strikes an irresistible chord in the target direction that deals magic damage to enemies hit and stuns them.",
                     "icon": "assets/spells/Sona/Crescendo.webp"
+                }
+            ]
+        },
+        {
+            "name": "Braum",
+            "nickname": "The Heart of the Freljord",
+            "render": "assets/champions/renders/Braum_Render.webp",
+            "square": "assets/champions/squares/BraumSquare.webp",
+            "bg": "../../assets/champions/splash/Braum_Splash.webp",
+            "lore": "Blessed with massive biceps and an even bigger heart, Braum is a beloved Iceborn hero of the Freljord. Every mead hall north of Frostheld toasts his legendary strength and tells tales of how he felled a forest of oaks in a single night, and punched an entire mountain into rubble. With his shield, an enchanted vault door forged in ages past, Braum roams the frozen north as a cheerful protector, helping the vulnerable as he works toward his dream of a peaceful Freljord.",
+
+            "spells": [
+                {
+                    "id": "p1",
+                    "spellName": "Concussive Blows",
+                    "passive": "Braum's basic attacks and Winter's Bite each apply a stack of Concussive Blows to their target, refreshing on subsequent applications and stacking up to 4 times. Once the first stack has been applied, any allied champion's basic attack applies an additional stack to the target on-hit. The fourth stack against a target consumes them all to deal magic damage and stun them. This effect cannot apply to the same target more than once every few seconds. During this immunity period, affected targets take bonus magic damage from Braum's basic attacks.",
+                    "icon": "assets/spells/Braum/Concussive_Blows.webp"
+                },
+                {
+                    "id": "q",
+                    "spellName": "Winter's Bite",
+                    "active": "Braum propels ice from his shield in the target direction, dealing magic damage to the first enemy hit and slowing them.",
+                    "icon": "assets/spells/Braum/Winters_Bite.webp"
+                },
+                {
+                    "id": "w",
+                    "spellName": "Stand Behind Me",
+                    "active": "Braum dashes to put himself between the target ally and the closest visible enemy champion, and upon arrival grants himself and the ally bonus armor and bonus magic resistance for a few seconds.",
+                    "icon": "assets/spells/Braum/Stand_Behind_Me.webp"
+                },
+                {
+                    "id": "e",
+                    "spellName": "Unbreakable",
+                    "active": "Braum sets his shield in the target direction for a few seconds, creating a barrier that intercepts all incoming hostile projectiles and reduces the damage Braum takes through it. The first instance of damage dealt by a champion from this direction is reduced by 100%. While his shield is raised, Braum also gains bonus movement speed and ghosting.",
+                    "icon": "assets/spells/Braum/Unbreakable.webp"
+                },
+                {
+                    "id": "r",
+                    "spellName": "Glacial Fissure",
+                    "active": "Braum leaps into the air and slams his shield into the ground, creating a fissure that travels forth in the target direction, dealing magic damage to enemies within its path and those around Braum. The first target hit is knocked up, increased if they are further away from Braum. All other enemies hit are knocked up. A field of ice is created along the fissure's path, slowing enemies within the area. The field disappears after the duration ends in the same order and speed it was created with.",
+                    "icon": "assets/spells/Braum/Glacial_Fissure.webp"
+                }
+            ]
+        },
+        {
+            "name": "Leona",
+            "nickname": "The Radiant Dawn",
+            "render": "assets/champions/renders/Leona_Render.webp",
+            "square": "assets/champions/squares/LeonaSquare.webp",
+            "bg": "../../assets/champions/splash/Leona_Splash.webp",
+            "lore": "Imbued with the fire of the sun, Leona is a holy warrior of the Solari who defends Mount Targon with her Zenith Blade and the Shield of Daybreak. Her skin shimmers with starfire while her eyes burn with the power of the celestial Aspect within her. Armored in gold and bearing a terrible burden of ancient knowledge, Leona brings enlightenment to some, death to others.",
+
+            "spells": [
+                {
+                    "id": "p1",
+                    "spellName": "Sunlight",
+                    "passive": "Leona's abilities mark enemies hit, refreshing on subsequent hits. Allied champions' damaging attacks and abilities against a marked target will consume the mark to deal bonus magic damage.",
+                    "icon": "assets/spells/Leona/Sunlight.webp"
+                },
+                {
+                    "id": "q",
+                    "spellName": "Shield of Daybreak",
+                    "active": "Leona illuminates her shield, empowering her next basic attack to gain bonus range, deal bonus magic damage and stun the target. Shield of Daybreak resets Leona's basic attack timer.",
+                    "icon": "assets/spells/Leona/Shield_of_Daybreak.webp"
+                },
+                {
+                    "id": "w",
+                    "spellName": "Eclipse",
+                    "active": "Leona raises her guard, gaining flat damage reduction and bonus armor and bonus magic resistance. Her shield detonates after the duration, dealing magic damage to nearby enemies. If this hits an enemy, Leona's guard is extended for an additional duration.",
+                    "icon": "assets/spells/Leona/Eclipse.webp"
+                },
+                {
+                    "id": "e",
+                    "spellName": "Zenith Blade",
+                    "active": "Leona projects her sword in the target direction that deals magic damage to enemies hit. If she hits at least one enemy champion, she will dash behind the last one struck and root them. Leona is unable to move or attack while Zenith Blade is in flight. She can cast any of her abilities during the dash.",
+                    "icon": "assets/spells/Leona/Zenith_Blade.webp"
+                },
+                {
+                    "id": "r",
+                    "spellName": "Solar Flare",
+                    "active": "Leona calls down a solar flare that strikes upon the target location, granting sight of the area before impact and for another duration afterwards. Enemies hit are dealt magic damage. Targets are also slowed or stunned for the same duration if they are hit by the epicenter.",
+                    "icon": "assets/spells/Leona/Solar_Flare.webp"
                 }
             ]
         }
